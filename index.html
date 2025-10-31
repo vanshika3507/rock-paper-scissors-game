@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors - Ultimate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <header class="top-bar">
+      <h1>⚔ Rock • Paper • Scissors</h1>
+      <button id="theme-toggle">🌙</button>
+    </header>
+
+    <main class="game-container">
+      <div class="status">
+        <h2 id="status-text">⚔ Round 1 – Make Your Move</h2>
+      </div>
+
+      <div class="choices">
+        <div class="choice" id="rock">
+          <img src="rock.png" alt="Rock" />
+          <p>Rock</p>
+        </div>
+        <div class="choice" id="paper">
+          <img src="paper.png" alt="Paper" />
+          <p>Paper</p>
+        </div>
+        <div class="choice" id="scissors">
+          <img src="scissor.png" alt="Scissors" />
+          <p>Scissors</p>
+        </div>
+      </div>
+
+      <div class="score-board">
+        <div class="score">
+          <h3>You</h3>
+          <p id="user-score">0</p>
+        </div>
+        <div class="score">
+          <h3>Computer</h3>
+          <p id="comp-score">0</p>
+        </div>
+      </div>
+
+      <p class="high-score-text">🏆 Best Score: <span id="high-score">0</span></p>
+
+
+      <p id="result-msg">Let’s begin...</p>
+      <button id="restart-btn">Restart Game</button>
+    </main>
+
+    <footer>
+      <p>Designed by Vanshika Hasija ✨</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
